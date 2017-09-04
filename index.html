@@ -1,0 +1,80 @@
+---
+title: "Check List"
+desc: "Your roadmap to mastery"
+---
+<!DOCTYPE html>
+<html class="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="apple-mobile-web-capable" content="yes">
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checklist | Discover, Learn, Check</title>
+  <link rel="shortcut icon" href="{{ site.github.url }}/assets/img/favicon.ico">
+  <link rel="stylesheet" href="{{ site.github.url }}/assets/css/main.css">
+
+  <link rel="stylesheet" type="text/css" href="{{ site.github.url }}/assets/css/box/default.css" />
+  <link rel="stylesheet" type="text/css" href="{{ site.github.url }}/assets/css/box/component.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="assets/css/box/climacons.css" /> -->
+
+</head>
+<body>
+  {% include header.html %}
+  <div class="container">
+    <div class="main">
+      <ul id="rb-grid" class="rb-grid clearfix">
+        <a href="{{ site.checklists[0].url | prepend: site.github.url }}">
+          <li class="icon-clima-1 rb-span-2">
+            <h3>JAVA</h3><span class="rb-temp">Programmging</span>
+          </li></a>
+        <a href="{{ site.checklists[1].url | prepend: site.github.url }}">
+          <li class="icon-clima-2">
+            <h3>C++</h3><span class="rb-temp">Programming</span>
+          </li></a>
+        <a href="{{ site.checklists[2].url | prepend: site.github.url }}">
+          <li class="icon-clima-1">
+            <h3>C</h3><span class="rb-temp">Programming</span>
+          </li></a>
+        <a href="{{ site.checklists[3].url | prepend: site.github.url }}">
+          <li class="icon-clima-4">
+            <h3>Python</h3><span class="rb-temp">Programming</span>
+          </li></a>
+        <a href="{{ site.checklists[4].url | prepend: site.github.url }}">
+          <li class="icon-clima-1">
+            <h3>OOPS</h3><span class="rb-temp">Prog. Concepts</span>
+          </li></a>
+        <a href="{{ site.checklists[5].url | prepend: site.github.url }}">
+          <li class="icon-clima-1">
+            <h3>HTML</h3><span class="rb-temp">Programming</span>
+          </li></a>
+        <a href="{{ site.checklists[6].url | prepend: site.github.url }}">
+          <li class="icon-clima-2">
+            <h3>Photoshop</h3><span class="rb-temp">Design</span>
+          </li></a>
+        <a href="{{ site.checklists[7].url | prepend: site.github.url }}">
+          <li class="icon-clima-11">
+            <h3>Android</h3><span class="rb-temp">Programming</span>
+          </li></a>
+        <a href="{{ site.checklists[8].url | prepend: site.github.url }}">
+          <li class="icon-clima-2 rb-span-2">
+            <h3>JQuery</h3><span class="rb-temp">Programming</span>
+          </li></a>
+        <a href="{{ site.checklists[9].url | prepend: site.github.url }}">
+          <li class="icon-clima-2">
+            <h3>Linux</h3><span class="rb-temp">Operating Sys</span>
+          </li></a>
+        <a href="{{ site.checklists[10].url | prepend: site.github.url }}">
+          <li class="icon-clima-4 rb-span-4">
+            <h3>git &amp GitHub</h3><span class="rb-temp">Skills</span>
+          </li></a>
+        </ul>
+
+      </div>
+    </div><!-- /container -->
+
+    {% include footer.html %}
+
+    <script src="{{ site.github.url }}/assets/js/jquery-2.1.1.min.js"></script>
+    <script src="{{ site.github.url }}/assets/js/functions.js"></script>
+  </body>
+  </html>

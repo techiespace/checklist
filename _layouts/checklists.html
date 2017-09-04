@@ -1,0 +1,66 @@
+---
+---
+<!DOCTYPE html>
+<html class="">
+<head>
+  <meta charset="UTF-3">
+  <meta name="apple-mobile-web-capable" content="yes">
+  <meta content="text/html; charset=utf-3" http-equiv="Content-Type">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }}</title>
+  <link rel="shortcut icon" href="{{ site.github.url }}/assets/img/favicon.ico">
+
+  <link rel="stylesheet" href="{{ site.github.url }}/assets/css/main.css">
+
+	<link rel="stylesheet" type="text/css" href="{{ site.github.url }}/assets/css/box/component.css" />
+  <link rel="stylesheet" type="text/css" href="{{ site.github.url }}/assets/css/box/default.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="assets/css/box/climacons.css" /> -->
+
+  <link rel="stylesheet" type="text/css" href="{{ site.github.url }}/assets/css/checkbox/component.css" />
+  <link rel="stylesheet" type="text/css" href="{{ site.github.url }}/assets/css/checkbox/demo.css" />
+  <link rel="stylesheet" type="text/css" href="{{ site.github.url }}/assets/css/checkbox/normalize.css" />
+</head>
+<body>
+
+  {% include header.html %}
+
+  <div class="container">
+  			<section class="begineer">
+  				<form class="ac-custom ac-checkbox ac-checkmark" autocomplete="off">
+  					<h2>Beginner</h2>
+  					<ul>
+              {% for iitem in page.begineer %}
+  						<li><input id="" name="" type="checkbox"><label for="">{{ iitem.item }}</label></li>
+              {% endfor %}
+  					<ul>
+  				</form>
+  			</section>
+  			<section class="intermediate">
+  				<form class="ac-custom ac-checkbox ac-checkmark" autocomplete="off">
+  					<h2>Intermediate</h2>
+  					<ul>
+              {% for iitem in page.intermediate %}
+  						<li><input id="" name="" type="checkbox"><label for="">{{ iitem.item }}</label></li>
+              {% endfor %}
+  					<ul>
+  				</form>
+  			</section>
+  			<section class="advanced">
+  				<form class="ac-custom ac-checkbox ac-checkmark" autocomplete="off">
+  					<h2>Advanced</h2>
+  					<ul>
+              {% for iitem in page.advanced %}
+  						<li><input id="" name="" type="checkbox"><label for="">{{ iitem.item }}</label></li>
+              {% endfor %}
+  					<ul>
+  				</form>
+  			</section>
+  		</div><!-- /container -->
+
+  {% include footer.html %}
+
+  <script src="{{ site.github.url }}/assets/js/jquery-2.1.1.min.js"></script>
+  <script src="{{ site.github.url }}/assets/js/functions.js"></script>
+  <script src="{{ site.github.url }}/assets/js/checkbox/svgcheckbx.js"></script>
+</body>
+</html>
